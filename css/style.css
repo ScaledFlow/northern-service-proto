@@ -18,32 +18,6 @@ main {
   float: right;
 }
 
-
-
-/* @media only screen and (min-width: 600px) { */
-.absolute {
-    background-color: black;
-    /* background-color: rgb(33, 150, 243); */
-  
-    color: white;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    /* margin-right: 10; */
-    width: 40px;
-    height: 150px;
-    border-radius: 10px 0px 0px 10px;
-  }
-
-.absolute-text {
-  margin-top: 0px;
-  padding: 0px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  line-height: 0.5em;
-}
-
 .sign-board {
   background-image: url("../assets/images/snow_plow.jpg");
   position: relative;
@@ -59,26 +33,6 @@ main {
   padding: 1rem;
 }
 
-.tag01 {
-  margin-left: 15px;
-  margin-top: 30px;
-  writing-mode: vertical-rl;
-  text-orientation: sidways;
-}
-
-.tag02 {
-  margin-left: 15px;
-  margin-top: 32px;
-  writing-mode: vertical-rl;
-  text-orientation: sidways;
-}
-
-.tag03 {
-  margin-left: 15px;
-  margin-top: 40px;
-  writing-mode: vertical-rl;
-  text-orientation: sidways;
-}
 
 hr {
   margin-top: 1rem;
