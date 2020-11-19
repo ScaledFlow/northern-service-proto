@@ -18,6 +18,14 @@ main {
   float: right;
 }
 
+.about-text {
+  font-size: 1.7rem;
+}
+
+.service-text {
+  font-size: 1.7rem;
+}
+
 .sign-board {
   background-image: url("../assets/images/snow_plow.jpg");
   position: relative;
