@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary p-0 mb-4">
+      <a class="navbar-brand bg-primary text-white p-2" href="index.html"
+        >&nbsp &nbsp NORTHERN SERVICES  &nbsp &nbsp &nbsp</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Portfolio sidebar tag -->
+    <!-- <section class="absolute absolute-text navbar-dark bg-primary">
+      <p class="tag01">Contact</p>
+    </section> -->
+
+    <!-- Contact Header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 offset-xl-2 py-5">
+          <h1 class="text-center mb-4">Contact</h1>
+          <br />
+
+          <div class="card p-2">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <img class="mr-2" /><i class="fas fa-phone fa-1x"></i>&nbsp
+                715-456-2762
+              </div>
+              <div class="col-md-4">
+                <img class="mr-2" /><i class="fas fa-envelope fa-1x"></i>&nbsp
+                andrew@gmail.com
+              </div>
+              <div class="col-md-4">
+                <img class="mr-2" />
+                <i class="fas fa-map-marker-alt fa-1x"> </i>&nbsp EAU Clair, WI
+              </div>
+            </div>
+            <!-- / .row -->
+          </div>
+          <!-- / .container -->
+
+          <br />
+
+          <!-- Contact Form -->
+          <form
+            id="contact-form"
+            method="post"
+            action="contact.php"
+            role="form"
+          >
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Please enter your firstname *"
+                      required="required"
+                      data-error="Firstname is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input
+                      id="form_lastname"
+                      type="text"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Please enter your lastname *"
+                      required="required"
+                      data-error="Lastname is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Please enter your email *"
+                      required="required"
+                      data-error="Valid email is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select
+                      id="form_need"
+                      name="need"
+                      class="form-control"
+                      required="required"
+                      data-error="Please specify your need."
+                    >
+                      <option value=""></option>
+                      <option value="Request quotation"
+                        >Request quotation</option
+                      >
+                      <option value="Request order status"
+                        >Request order status</option
+                      >
+                      <option value="Request copy of an invoice"
+                        >Request copy of an invoice</option
+                      >
+                      <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      class="form-control"
+                      placeholder="Message for me *"
+                      rows="4"
+                      required="required"
+                      data-error="Please, leave us a message."
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-2">
+                  <input
+                    type="submit"
+                    class="btn bg-primary text-white btn-send"
+                    value="Send message"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- /.8 -->
+      </div>
+      <!-- /.row-->
+    </div>
+    <!-- /.container-->
+
+    <br /><br /><br /><br />
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark p-0">
+      <div class="container">
+        <ul class="navbar-nav mx-auto">
+          <li>
+            <a class="navbar-brand" href="#">Norther Services 2020 &copy;</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
