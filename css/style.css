@@ -47,6 +47,7 @@ main {
 }
 
 .sign-board {
+  filter: brightness(90%);
   background-image: url("../assets/images/snow_plow.jpg");
   position: relative;
   background-position: center;
@@ -55,8 +56,13 @@ main {
   margin-top: 40px;
 }
 
+.dim {
+  /* background: rgba(0, 0, 0, 0.01); */
+  /* filter: brightness(100%); */
+}
+
 .sign-board .highlight {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.85);
   margin: 185px 80px 175px;
   padding: 1rem;
 }
